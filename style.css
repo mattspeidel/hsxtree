@@ -76,17 +76,15 @@ html {
     flex-direction: row;
 }
 .leftbox {
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 25pt;
     border: 2px solid #666666;
     border-radius: 25px;
-    margin: auto;
-    margin-top: 70px;
     background-image: linear-gradient(#F5F5F5, #B3B3B3);
     box-shadow: 5px 5px 5px #999;
     max-width: 32%;
+    align-self: flex-end;
 }
 .centerbox {
     display: flex;
@@ -108,11 +106,10 @@ html {
     padding: 25pt;
     border: 2px solid #666666;
     border-radius: 25px;
-    margin: auto;
-    margin-top: 70px;
     background-image: linear-gradient(#F5F5F5, #B3B3B3);
     box-shadow: 5px 5px 5px #999;
     max-width: 32%;
+    align-self: flex-end;
 }
 .centerrow {
     display: flex;
