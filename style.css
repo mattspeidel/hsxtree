@@ -1,0 +1,130 @@
+html {
+    padding: 10px;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+}
+.graybox {
+    background-image: linear-gradient(white, #111);
+}
+.bluebox {
+    background-image: linear-gradient(to right, white, blue);
+}
+.redbox {
+    background-image: linear-gradient(red, white);
+}
+.greenbox {
+    background-image: linear-gradient(to right, green, white);
+}
+.twobox { 
+    box-shadow: 
+    0 0 0 2px #000,
+	0 0 0 10px #FFFFFFFF,
+    0 0 0 12px #000,
+    2px 2px 2px #999;
+}
+.inbox {
+    box-shadow: 0 0 0 2px #000;
+}
+.outbox {
+    width: 128px;
+    height: 128px;
+    padding: 8px;
+    box-shadow: 
+        0 0 0 2px #000,
+        5px 5px 5px #666;
+}
+.overbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25pt;
+    border: 2px solid #666666;
+    border-radius: 25px;
+    margin: auto;
+    background-image: linear-gradient(#666666, #F5F5F5);
+    box-shadow: 5px 5px 5px #999;
+    width: 1800px;
+}
+.dhbox {
+    padding: 25pt;
+    border: 2px solid #666666;
+    border-radius: 25px;
+    margin: auto;
+    background-image: linear-gradient(#F5F5F5, #B3B3B3);
+    box-shadow: 5px 5px 5px #999;
+    text-align: center;
+}
+.threebox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25pt;
+    border: 2px solid #666666;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 70px;
+    background-image: linear-gradient(#F5F5F5, #B3B3B3);
+    box-shadow: 5px 5px 5px #999;
+    width: 99%;
+}
+.bottomboxes {
+    display: flex;
+    flex-direction: row;
+}
+.leftbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 25pt;
+    border: 2px solid #666666;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 70px;
+    background-image: linear-gradient(#F5F5F5, #B3B3B3);
+    box-shadow: 5px 5px 5px #999;
+    width: 32%;
+}
+.centerbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 25pt;
+    border: 2px solid #666666;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 70px;
+    background-image: linear-gradient(#F5F5F5, #B3B3B3);
+    box-shadow: 5px 5px 5px #999;
+    width: 32%;
+}
+.rightbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 25pt;
+    border: 2px solid #666666;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 70px;
+    background-image: linear-gradient(#F5F5F5, #B3B3B3);
+    box-shadow: 5px 5px 5px #999;
+    width: 32%;
+}
+.centerrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.leftrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.rightrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
