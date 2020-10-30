@@ -17,7 +17,10 @@ h2 {
     font-size: 30pt;
     background-color: #ffffff99;
     border: 1px solid black;
- }
+}
+span {
+    font-size: 40pt;
+}
 .graybox {
     background-image: linear-gradient(white, #111);
 }
@@ -50,6 +53,29 @@ h2 {
     max-width: 100%;
     height: auto;
 }
+.tooltip {
+    display: inline-block;
+}
+.tooltiptext {
+    visibility: hidden;
+    width: 400px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
 .redeembox {
     position: relative;
     padding: 8px;
