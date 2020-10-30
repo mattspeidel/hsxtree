@@ -6,6 +6,9 @@ html {
     box-sizing: inherit;
     margin: 0;
 }
+img {
+    max-width: 100px;
+}
 .graybox {
     background-image: linear-gradient(white, #111);
 }
@@ -29,25 +32,25 @@ html {
     box-shadow: 0 0 0 2px #000;
 }
 .outbox {
-    width: 128px;
-    height: 128px;
     padding: 8px;
     box-shadow: 
         0 0 0 2px #000,
         5px 5px 5px #666;
     margin: 10px;
+    max-width: 100%;
+    height: auto;
 }
 .overbox {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 25pt;
+    padding: 40pt;
     border: 2px solid #666666;
     border-radius: 25px;
     margin: auto;
     background-image: linear-gradient(#666666, #F5F5F5);
     box-shadow: 5px 5px 5px #999;
-    width: 1800px;
+    max-width: 55%;
 }
 .dhbox {
     padding: 25pt;
@@ -74,6 +77,8 @@ html {
 .bottomboxes {
     display: flex;
     flex-direction: row;
+    max-width: 100%;
+    height: auto;
 }
 .leftbox {
     flex-direction: column;
@@ -84,6 +89,7 @@ html {
     background-image: linear-gradient(#F5F5F5, #B3B3B3);
     box-shadow: 5px 5px 5px #999;
     max-width: 32%;
+    margin-right: 10%;
     align-self: flex-end;
 }
 .centerbox {
@@ -94,7 +100,7 @@ html {
     border: 2px solid #666666;
     border-radius: 25px;
     margin: auto;
-    margin-top: 70px;
+    margin-top: 5%;
     background-image: linear-gradient(#F5F5F5, #B3B3B3);
     box-shadow: 5px 5px 5px #999;
     max-width: 32%;
@@ -109,6 +115,7 @@ html {
     background-image: linear-gradient(#F5F5F5, #B3B3B3);
     box-shadow: 5px 5px 5px #999;
     max-width: 32%;
+    margin-left: 5%;
     align-self: flex-end;
 }
 .centerrow {
@@ -128,4 +135,38 @@ html {
 }
 #G {
     width: 112px;
+}
+.uparrowbox {
+
+}
+.leftarrowbox {
+
+}
+.arrow_box {
+	position: relative;
+	background: #88b7d5;
+	border: 2px solid #000000;
+}
+.arrow_box:after, .arrow_box:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #88b7d5;
+	border-width: 30px;
+	margin-left: -30px;
+}
+.arrow_box:before {
+	border-color: rgba(0, 0, 0, 0);
+	border-bottom-color: #000000;
+	border-width: 33px;
+	margin-left: -33px;
 }
