@@ -272,3 +272,5 @@ span {
 	border-width: 53px;
 	margin-left: -53px;
 }
+@media screen and (max-width: 600px) {
+}
