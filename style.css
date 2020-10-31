@@ -7,14 +7,14 @@ html {
     margin: 0;
 }
 img {
-    max-width: 100px;
+    max-width: 75px;
 }
 h2 { 
     position: absolute; 
     top: 8px; 
-    left: 56px; 
+    left: 42px; 
     width: 45%; 
-    font-size: 30pt;
+    font-size: 22pt;
     background-color: #ffffff99;
     border: 1px solid black;
 }
@@ -32,13 +32,6 @@ span {
 }
 .greenbox {
     background-image: linear-gradient(to right, #008A00, white);
-}
-.twobox { 
-    box-shadow: 
-    0 0 0 2px #000,
-	0 0 0 10px #FFFFFFFF,
-    0 0 0 12px #000,
-    2px 2px 2px #999;
 }
 .inbox {
     box-shadow: 0 0 0 2px #000;
@@ -141,6 +134,7 @@ span {
     height: auto;
 }
 .leftbox {
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 25pt;
