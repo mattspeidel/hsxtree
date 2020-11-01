@@ -275,5 +275,25 @@ span {
 	margin-left: -53px;
 }
 @media screen and (max-width: 600px) {
-    
+    body {
+        display: inline-flex;
+        width: 250%;
+        padding-left: 200px;
+    }
+    html {
+        padding: 2px;
+    }
+    .dhbox {
+        max-width: 30%;
+    }
+    .leftbox {
+        width: 75%;
+    }
+    .centerbox {
+        margin-top: 100px;
+        width: 75%;
+    }
+    .rightbox {
+        width: 75%;
+    }
 }
